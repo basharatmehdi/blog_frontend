@@ -1,10 +1,14 @@
 import React from "react";
 
-const SidebarHeading = () => {
+const SidebarHeading = ({ title }) => {
   return (
     <div>
-      <h3 className="bg-[#00ac8a] w-full py-3 text-center uppercase font-semibold tracking-wider mb-3 rounded-lg">
-        Popular Posts
+      <h3
+        className={`bg-[#00ac8a] w-full py-3 text-center uppercase font-semibold tracking-wider ${
+          title === "Popular Posts" ? "" : "mt-7"
+        } mb-3 rounded-lg`}
+      >
+        {title}
       </h3>
     </div>
   );
