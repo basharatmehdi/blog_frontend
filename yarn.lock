@@ -327,6 +327,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-string-parser@npm:^7.21.5":
+  version: 7.21.5
+  resolution: "@babel/helper-string-parser@npm:7.21.5"
+  checksum: 36c0ded452f3858e67634b81960d4bde1d1cd2a56b82f4ba2926e97864816021c885f111a7cf81de88a0ed025f49d84a393256700e9acbca2d99462d648705d8
+  languageName: node
+  linkType: hard
+
 "@babel/helper-validator-identifier@npm:^7.18.6, @babel/helper-validator-identifier@npm:^7.19.1":
   version: 7.19.1
   resolution: "@babel/helper-validator-identifier@npm:7.19.1"
@@ -1500,7 +1507,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.0.0, @babel/types@npm:^7.12.6, @babel/types@npm:^7.18.6, @babel/types@npm:^7.18.9, @babel/types@npm:^7.20.0, @babel/types@npm:^7.20.2, @babel/types@npm:^7.20.5, @babel/types@npm:^7.20.7, @babel/types@npm:^7.21.0, @babel/types@npm:^7.21.2, @babel/types@npm:^7.21.4, @babel/types@npm:^7.3.0, @babel/types@npm:^7.3.3, @babel/types@npm:^7.4.4, @babel/types@npm:^7.8.3":
+"@babel/types@npm:^7.0.0, @babel/types@npm:^7.12.6, @babel/types@npm:^7.18.6, @babel/types@npm:^7.18.9, @babel/types@npm:^7.20.0, @babel/types@npm:^7.20.2, @babel/types@npm:^7.20.5, @babel/types@npm:^7.20.7, @babel/types@npm:^7.21.0, @babel/types@npm:^7.21.2, @babel/types@npm:^7.21.4, @babel/types@npm:^7.3.0, @babel/types@npm:^7.3.3, @babel/types@npm:^7.4.4":
   version: 7.21.4
   resolution: "@babel/types@npm:7.21.4"
   dependencies:
@@ -1511,10 +1518,36 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/types@npm:^7.8.3":
+  version: 7.22.4
+  resolution: "@babel/types@npm:7.22.4"
+  dependencies:
+    "@babel/helper-string-parser": ^7.21.5
+    "@babel/helper-validator-identifier": ^7.19.1
+    to-fast-properties: ^2.0.0
+  checksum: ffe36bb4f4a99ad13c426a98c3b508d70736036cae4e471d9c862e3a579847ed4f480686af0fce2633f6f7c0f0d3bf02da73da36e7edd3fde0b2061951dcba9a
+  languageName: node
+  linkType: hard
+
 "@bcoe/v8-coverage@npm:^0.2.3":
   version: 0.2.3
   resolution: "@bcoe/v8-coverage@npm:0.2.3"
   checksum: 850f9305536d0f2bd13e9e0881cb5f02e4f93fad1189f7b2d4bebf694e3206924eadee1068130d43c11b750efcc9405f88a8e42ef098b6d75239c0f047de1a27
+  languageName: node
+  linkType: hard
+
+"@ckeditor/ckeditor5-react@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "@ckeditor/ckeditor5-react@npm:6.0.0"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@ckeditor/ckeditor5-core": ">=37.0.0"
+    "@ckeditor/ckeditor5-engine": ">=37.0.0"
+    "@ckeditor/ckeditor5-utils": ">=37.0.0"
+    "@ckeditor/ckeditor5-watchdog": ">=37.0.0"
+    react: ^16.13.1 || ^17.0.0 || ^18.0.0
+  checksum: f8548ee3747e19b415ed521cef813947e16e9b81a4452f139168cb404c66354d9e753f5a6be9070483c9855adc5b8ebd59895c0a8a6159297ce91092ae07a0cb
   languageName: node
   linkType: hard
 
@@ -2228,10 +2261,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/router@npm:1.5.0":
-  version: 1.5.0
-  resolution: "@remix-run/router@npm:1.5.0"
-  checksum: 9c510c174af1553edd1f039ba16e7e3d34e04d53b3bac18814660e31cd0c48297ea4291ff86d0736b560123ebc63ecb62fa525829181d16a8dad15270d6672d7
+"@remix-run/router@npm:1.6.2":
+  version: 1.6.2
+  resolution: "@remix-run/router@npm:1.6.2"
+  checksum: 5969d313bff6ba5c75917910090cebafda84b9d3b4b453fae6b3d60fea9f938078578ffca769c532ab7ce252cd4a207b78d1024d7c727ab80dd572e62fd3b3f2
   languageName: node
   linkType: hard
 
@@ -3313,12 +3346,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn-import-assertions@npm:^1.7.6":
-  version: 1.8.0
-  resolution: "acorn-import-assertions@npm:1.8.0"
+"acorn-import-assertions@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "acorn-import-assertions@npm:1.9.0"
   peerDependencies:
     acorn: ^8
-  checksum: 5c4cf7c850102ba7ae0eeae0deb40fb3158c8ca5ff15c0bca43b5c47e307a1de3d8ef761788f881343680ea374631ae9e9615ba8876fee5268dbe068c98bcba6
+  checksum: 944fb2659d0845c467066bdcda2e20c05abe3aaf11972116df457ce2627628a81764d800dd55031ba19de513ee0d43bb771bc679cc0eda66dc8b4fade143bc0c
   languageName: node
   linkType: hard
 
@@ -3532,6 +3565,20 @@ __metadata:
     normalize-path: ^3.0.0
     picomatch: ^2.0.4
   checksum: 3e044fd6d1d26545f235a9fe4d7a534e2029d8e59fa7fd9f2a6eb21230f6b5380ea1eaf55136e60cbf8e613544b3b766e7a6fa2102e2a3a117505466e3025dc2
+  languageName: node
+  linkType: hard
+
+"apexcharts@npm:^3.41.0":
+  version: 3.41.0
+  resolution: "apexcharts@npm:3.41.0"
+  dependencies:
+    svg.draggable.js: ^2.2.2
+    svg.easing.js: ^2.0.0
+    svg.filter.js: ^2.0.2
+    svg.pathmorphing.js: ^0.1.3
+    svg.resize.js: ^1.4.3
+    svg.select.js: ^3.0.1
+  checksum: b578d2473ffeffa66026dfc9c0c7f39a40663d3b1cfdd9732cf9b6624e3e9348474a3cbdfaf5ada0924cb296f52a59a1ffc4dc3930899cdb5df690b4970a3762
   languageName: node
   linkType: hard
 
@@ -5367,13 +5414,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "enhanced-resolve@npm:5.13.0"
+"enhanced-resolve@npm:^5.14.1":
+  version: 5.14.1
+  resolution: "enhanced-resolve@npm:5.14.1"
   dependencies:
     graceful-fs: ^4.2.4
     tapable: ^2.2.0
-  checksum: 76d6844c4393d76beed5b3ce6cf5a98dee3ad5c84a9887f49ccde1224e3b7af201dfbd5a57ebf2b49f623b74883df262d50ff480d3cc02fc2881fc58b84e1bbe
+  checksum: ad2a31928b6649eed40d364838449587f731baa63863e83d2629bebaa8be1eabac18b90f89c1784bc805b0818363e99b22547159edd485d7e5ccf18cdc640642
   languageName: node
   linkType: hard
 
@@ -6289,12 +6336,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "frontend@workspace:."
   dependencies:
+    "@ckeditor/ckeditor5-react": ^6.0.0
     "@tailwindcss/forms": ^0.5.3
     "@tailwindcss/line-clamp": ^0.4.4
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0
     "@testing-library/user-event": ^13.5.0
+    apexcharts: ^3.41.0
     react: ^18.2.0
+    react-apexcharts: ^1.4.0
     react-dom: ^18.2.0
     react-icons: ^4.8.0
     react-router-dom: ^6.10.0
@@ -7151,7 +7201,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-core-module@npm:^2.11.0, is-core-module@npm:^2.12.0, is-core-module@npm:^2.9.0":
+"is-core-module@npm:^2.11.0, is-core-module@npm:^2.9.0":
   version: 2.12.0
   resolution: "is-core-module@npm:2.12.0"
   dependencies:
@@ -8827,10 +8877,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minipass@npm:^4.0.0":
-  version: 4.2.8
-  resolution: "minipass@npm:4.2.8"
-  checksum: 7f4914d5295a9a30807cae5227a37a926e6d910c03f315930fde52332cf0575dfbc20295318f91f0baf0e6bb11a6f668e30cde8027dea7a11b9d159867a3c830
+"minipass@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "minipass@npm:5.0.0"
+  checksum: 425dab288738853fded43da3314a0b5c035844d6f3097a8e3b5b29b328da8f3c1af6fc70618b32c29ff906284cf6406b6841376f21caaadd0793c1d5a6a620ea
   languageName: node
   linkType: hard
 
@@ -8871,14 +8921,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ms@npm:2.1.2":
+"ms@npm:2.1.2, ms@npm:^2.1.1":
   version: 2.1.2
   resolution: "ms@npm:2.1.2"
   checksum: 673cdb2c3133eb050c745908d8ce632ed2c02d85640e2edb3ace856a2266a813b30c613569bf3354fdf4ea7d1a1494add3bfa95e2713baa27d0c2c71fc44f58f
   languageName: node
   linkType: hard
 
-"ms@npm:2.1.3, ms@npm:^2.0.0, ms@npm:^2.1.1":
+"ms@npm:2.1.3, ms@npm:^2.0.0":
   version: 2.1.3
   resolution: "ms@npm:2.1.3"
   checksum: aa92de608021b242401676e35cfa5aa42dd70cbdc082b916da7fb925c542173e36bce97ea3e804923fe92c0ad991434e4a38327e15a1b5b5f945d66df615ae6d
@@ -10444,7 +10494,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.5.7, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -10553,6 +10603,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-apexcharts@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "react-apexcharts@npm:1.4.0"
+  dependencies:
+    prop-types: ^15.5.7
+  peerDependencies:
+    apexcharts: ^3.18.0
+    react: ">=0.13"
+  checksum: eb6c1fcfe7c8c9cb565edd807095633f80e8c7da115cc9aaa490b6651f771bd6bf9a48df6def4b77c6865e9170b906fa1fb8fe2b5f76b8c14ef69bca592e0f37
+  languageName: node
+  linkType: hard
+
 "react-app-polyfill@npm:^3.0.0":
   version: 3.0.0
   resolution: "react-app-polyfill@npm:3.0.0"
@@ -10619,11 +10681,11 @@ __metadata:
   linkType: hard
 
 "react-icons@npm:^4.8.0":
-  version: 4.8.0
-  resolution: "react-icons@npm:4.8.0"
+  version: 4.9.0
+  resolution: "react-icons@npm:4.9.0"
   peerDependencies:
     react: "*"
-  checksum: 4dbba7ad989c295b410e19b2a702722dae44368cb04b6515f9471353552f31ac80bd350f121d5bff79f81504b84039ede44d09e9f035f48bb1032e6eace126c4
+  checksum: 69d1000d02349cf4baa78a0882aff09723d348d910256ea7489dea777abf10f158b27c1b5d3b1d2ec030e21320eae0afcc13f9c9d11afb85a8809c59a23a923c
   languageName: node
   linkType: hard
 
@@ -10656,26 +10718,26 @@ __metadata:
   linkType: hard
 
 "react-router-dom@npm:^6.10.0":
-  version: 6.10.0
-  resolution: "react-router-dom@npm:6.10.0"
+  version: 6.11.2
+  resolution: "react-router-dom@npm:6.11.2"
   dependencies:
-    "@remix-run/router": 1.5.0
-    react-router: 6.10.0
+    "@remix-run/router": 1.6.2
+    react-router: 6.11.2
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: d048d8cc66e5aec782bd675097d6bf0e5f867f3f0539bff9acdc4a314b5e0e34093944762960ca0977a54c6255272edd262231242b18c4e260d68df6b5288464
+  checksum: ba44ff37f2956bc18991f2eedb32a3fa46d35832f61ded6c5d167e853ca289868fca6635467866280c73bc3da00dce8437dbbec57da100c0a3e3e3850af00b83
   languageName: node
   linkType: hard
 
-"react-router@npm:6.10.0":
-  version: 6.10.0
-  resolution: "react-router@npm:6.10.0"
+"react-router@npm:6.11.2":
+  version: 6.11.2
+  resolution: "react-router@npm:6.11.2"
   dependencies:
-    "@remix-run/router": 1.5.0
+    "@remix-run/router": 1.6.2
   peerDependencies:
     react: ">=16.8"
-  checksum: c9fce46147c04257d7d6fa1f5bbfac96c5fdd0b15f26918bd12b2e5fe9143977c5a4452272f9b85795a22e29ec105a60d0bbe036118efc52b383d163cd8829ab
+  checksum: e47f875dca70033a3b42704cb5ec076b60f9629a5cdc3be613707f3d5a5706123fb80301037455c285c6d5a1011b443e1784e0103969ebfac7071648d360c413
   languageName: node
   linkType: hard
 
@@ -10986,15 +11048,15 @@ __metadata:
   linkType: hard
 
 "resolve@npm:^1.1.7, resolve@npm:^1.14.2, resolve@npm:^1.19.0, resolve@npm:^1.20.0, resolve@npm:^1.22.1":
-  version: 1.22.3
-  resolution: "resolve@npm:1.22.3"
+  version: 1.22.2
+  resolution: "resolve@npm:1.22.2"
   dependencies:
-    is-core-module: ^2.12.0
+    is-core-module: ^2.11.0
     path-parse: ^1.0.7
     supports-preserve-symlinks-flag: ^1.0.0
   bin:
     resolve: bin/resolve
-  checksum: fb834b81348428cb545ff1b828a72ea28feb5a97c026a1cf40aa1008352c72811ff4d4e71f2035273dc536dcfcae20c13604ba6283c612d70fa0b6e44519c374
+  checksum: 7e5df75796ebd429445d102d5824482ee7e567f0070b2b45897b29bb4f613dcbc262e0257b8aeedb3089330ccaea0d6a0464df1a77b2992cf331dcda0f4cb549
   languageName: node
   linkType: hard
 
@@ -11012,15 +11074,15 @@ __metadata:
   linkType: hard
 
 "resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
-  version: 1.22.3
-  resolution: "resolve@patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"
+  version: 1.22.2
+  resolution: "resolve@patch:resolve@npm%3A1.22.2#~builtin<compat/resolve>::version=1.22.2&hash=c3c19d"
   dependencies:
-    is-core-module: ^2.12.0
+    is-core-module: ^2.11.0
     path-parse: ^1.0.7
     supports-preserve-symlinks-flag: ^1.0.0
   bin:
     resolve: bin/resolve
-  checksum: ad59734723b596d0891321c951592ed9015a77ce84907f89c9d9307dd0c06e11a67906a3e628c4cae143d3e44898603478af0ddeb2bba3f229a9373efe342665
+  checksum: 66cc788f13b8398de18eb4abb3aed90435c84bb8935953feafcf7231ba4cd191b2c10b4a87b1e9681afc34fb138c705f91f7330ff90bfa36f457e5584076a2b8
   languageName: node
   linkType: hard
 
@@ -11900,6 +11962,77 @@ __metadata:
   languageName: node
   linkType: hard
 
+"svg.draggable.js@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "svg.draggable.js@npm:2.2.2"
+  dependencies:
+    svg.js: ^2.0.1
+  checksum: b9068975d743be664695e7d4323624bba8ff2795b855a46a2f15c842827022684501d63239c99723238d39c9f991940dc04639b8f43ac124fd9ca44a34e6aab2
+  languageName: node
+  linkType: hard
+
+"svg.easing.js@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "svg.easing.js@npm:2.0.0"
+  dependencies:
+    svg.js: ">=2.3.x"
+  checksum: 0f7df78333d879dc00200ddbb4e9d7d745307c002b5dd242ddaf276e8d907067ab75383869ef1940975be1765d595d379ced491ff4bdf78d867bff8225544e92
+  languageName: node
+  linkType: hard
+
+"svg.filter.js@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "svg.filter.js@npm:2.0.2"
+  dependencies:
+    svg.js: ^2.2.5
+  checksum: f0e780bfe385336a7c9d1d8a3ebba1ca9712f6bf0917769fd30c9fd4e3559186ec18d4d6520d9841a9cceba2ac8ff1eacc76b98f7e8b15d5f4a58975a8ecdc64
+  languageName: node
+  linkType: hard
+
+"svg.js@npm:>=2.3.x, svg.js@npm:^2.0.1, svg.js@npm:^2.2.5, svg.js@npm:^2.4.0, svg.js@npm:^2.6.5":
+  version: 2.7.1
+  resolution: "svg.js@npm:2.7.1"
+  checksum: 945bfc9623985fefb4c7275a1b98b5168e5857291f46cbd299bd2e14ce7f4428fea6569c7446d37b75694c43dea01a5f179fbce4f770e7dcd136117bb8f1a3f3
+  languageName: node
+  linkType: hard
+
+"svg.pathmorphing.js@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "svg.pathmorphing.js@npm:0.1.3"
+  dependencies:
+    svg.js: ^2.4.0
+  checksum: bcbe1ccea95c980fa127cb6ad955f1970d763143ab11576cca2fd8d13616deedf933bc17a6310754cd0cb404ac501d627afb5805c578878e4c8f24e1818a7de6
+  languageName: node
+  linkType: hard
+
+"svg.resize.js@npm:^1.4.3":
+  version: 1.4.3
+  resolution: "svg.resize.js@npm:1.4.3"
+  dependencies:
+    svg.js: ^2.6.5
+    svg.select.js: ^2.1.2
+  checksum: 8f4116f4422b72c66bb1110dca2d77ab2cc0665db1e0cd1c0020e06fe9684f53d9bc7aca3b90ce82ce35103ff8ea83a93df1db5d88c889e511d7622c9b000884
+  languageName: node
+  linkType: hard
+
+"svg.select.js@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "svg.select.js@npm:2.1.2"
+  dependencies:
+    svg.js: ^2.2.5
+  checksum: 1dbbb44d16170aad1372e0f8f0d109a21e4216e1e4e28a566738c6cb6b4519b37e44cd1f7de06f3c8eec5e588845d8cbb0e37efc89b8d27401e4c6a0a13564a4
+  languageName: node
+  linkType: hard
+
+"svg.select.js@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "svg.select.js@npm:3.0.1"
+  dependencies:
+    svg.js: ^2.6.5
+  checksum: 0ce3bda86f4b527ce1add02d0ac61ac26678db24c0e4126c584b752e65a1c3458bbe958e29eb4604b3157ef1fdace37b727eccbc2ccdb4fce0015e0ad196fc1c
+  languageName: node
+  linkType: hard
+
 "svgo@npm:^1.2.2":
   version: 1.3.2
   resolution: "svgo@npm:1.3.2"
@@ -11999,16 +12132,16 @@ __metadata:
   linkType: hard
 
 "tar@npm:^6.1.11, tar@npm:^6.1.2":
-  version: 6.1.13
-  resolution: "tar@npm:6.1.13"
+  version: 6.1.15
+  resolution: "tar@npm:6.1.15"
   dependencies:
     chownr: ^2.0.0
     fs-minipass: ^2.0.0
-    minipass: ^4.0.0
+    minipass: ^5.0.0
     minizlib: ^2.1.1
     mkdirp: ^1.0.3
     yallist: ^4.0.0
-  checksum: 8a278bed123aa9f53549b256a36b719e317c8b96fe86a63406f3c62887f78267cea9b22dc6f7007009738509800d4a4dccc444abd71d762287c90f35b002eb1c
+  checksum: f23832fceeba7578bf31907aac744ae21e74a66f4a17a9e94507acf460e48f6db598c7023882db33bab75b80e027c21f276d405e4a0322d58f51c7088d428268
   languageName: node
   linkType: hard
 
@@ -12688,8 +12821,8 @@ __metadata:
   linkType: hard
 
 "webpack@npm:^5.64.4":
-  version: 5.80.0
-  resolution: "webpack@npm:5.80.0"
+  version: 5.85.0
+  resolution: "webpack@npm:5.85.0"
   dependencies:
     "@types/eslint-scope": ^3.7.3
     "@types/estree": ^1.0.0
@@ -12697,10 +12830,10 @@ __metadata:
     "@webassemblyjs/wasm-edit": ^1.11.5
     "@webassemblyjs/wasm-parser": ^1.11.5
     acorn: ^8.7.1
-    acorn-import-assertions: ^1.7.6
+    acorn-import-assertions: ^1.9.0
     browserslist: ^4.14.5
     chrome-trace-event: ^1.0.2
-    enhanced-resolve: ^5.13.0
+    enhanced-resolve: ^5.14.1
     es-module-lexer: ^1.2.1
     eslint-scope: 5.1.1
     events: ^3.2.0
@@ -12720,7 +12853,7 @@ __metadata:
       optional: true
   bin:
     webpack: bin/webpack.js
-  checksum: 7b9229d64439ceb20372e0b1452025e2a37cf136f7867102e095b99c3f2bbaf8b0e7e8ff093278238e45b0b1efaae4ed5f0709be48c20e8dab94e94f11c8e5c7
+  checksum: b013be9fbc7f6810d1f229f570c70710ddbc7290f817411acffe4214b2b6c783a041ab1f2005d9e1109f4ab21c136f0f8d8c067a5fb64f20a82dcbc1ee0d3f42
   languageName: node
   linkType: hard
 

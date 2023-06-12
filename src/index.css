@@ -16,3 +16,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.dashboard .active {
+  background-color: #334155;
+}
+.navbar .active {
+  border-bottom: 2px solid #00df9a;
+  color: #00df9a;
+}
