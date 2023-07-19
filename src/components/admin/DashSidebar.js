@@ -28,9 +28,9 @@ const DashSidebar = () => {
           !showSidebar ? "hidden md:flex flex-col" : "flex flex-col w-full"
         } bg-slate-900 md:h-screen rounded-lg md:rounded-b-lg md:rounded-t-none`}
       >
-        <Button>
-          <Link to="create-post">Add New Post</Link>
-        </Button>
+        <Link to="create-post">
+          <Button>Add New Post</Button>
+        </Link>
         <nav className="flex flex-col mt-6 dashboard">
           <NavLink to={`/admin/dashboard`} className={linkStyles}>
             <BsFillFileTextFill />

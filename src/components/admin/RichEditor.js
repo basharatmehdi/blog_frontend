@@ -1,51 +1,110 @@
 import React, { useState } from "react";
-import { CKEditor } from "@ckeditor/ckeditor5-react";
-import Editor from "../../ckeditor/build/ckeditor";
+import hljs from "highlight.js";
+import "highlight.js/styles/atom-one-dark-reasonable.css";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 import InputField from "../InputField";
-import EditorSidebar from "./EditorSidebar";
+import EditorToolbar from "./EditorToolbar";
+import DragAndDrop from "./DragAndDrop";
+
+import { useCreatePostMutation } from "../../services/post";
+
+const editorStyle = {
+  height: "250px",
+};
+const modules = {
+  syntax: {
+    highlight: (text) => hljs.highlightAuto(text).value,
+  },
+  toolbar: [
+    [{ header: [1, 2, 3, false] }],
+    ["bold", "italic", "underline", "strike", "blockquote"],
+    [
+      { list: "ordered" },
+      { list: "bullet" },
+      { indent: "-1" },
+      { indent: "+1" },
+    ],
+    [
+      {
+        align: ["", "center", "right", "justify"],
+      },
+    ],
+    // [{ font: [] }],
+    [{ color: [] }, { background: [] }],
+    ["link", "image", "video"],
+    ["clean", "code-block"],
+  ],
+};
+
+const formats = [
+  "align",
+  "header",
+  "bold",
+  "italic",
+  "underline",
+  "strike",
+  "blockquote",
+  "list",
+  "bullet",
+  "indent",
+  "link",
+  "image",
+  "video",
+  "code-block",
+  "color",
+  "background",
+];
 
 const RichEditor = () => {
-  // const [content, setContent] = useState("");
+  const [content, setContent] = useState("");
+  const [files, setFiles] = useState(null);
+  const [title, setTitle] = useState("");
+  // console.log(title);
+  // console.log(files);
+  const image = files && files[0];
+  const formData = {
+    title,
+    content,
+    image,
+  };
+  const [createPost, { data, error }] = useCreatePostMutation();
+  // console.log(error, data);
+  // console.log(formData);
+  // const createPost = async (formData) => {
+  //   const post = await fetch("http://localhost:4000/api/posts/create-post", {
+  //     method: "POST",
+  //     body: formData,
+  //     headers: {
+  //       "Content-Type": "multipart/form-data",
+  //     },
+  //     mode: "no-cors",
+  //   });
+  //   console.log(post);
+  // };
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-8 gap-4">
-      <div className="col-span-6 text-gray-700">
-        <InputField placeholder={"Title goes here!"} />
-        <CKEditor
-          editor={Editor}
-          data=""
-          onReady={(editor) => {
-            editor.editing.view.change((writer) => {
-              writer.setStyle(
-                "height",
-                "400px",
-                editor.editing.view.document.getRoot()
-              );
-            });
-            // You can store the "editor" and use when it is needed.
-            // console.log("Editor is ready to use!", editor);
-          }}
-          onChange={(event, editor) => {
-            const data = editor.getData();
-            // setContent(data);
-            // console.log({ event, editor, data });
-          }}
-          onBlur={(event, editor) => {
-            // console.log("Blur.", editor);
-          }}
-          onFocus={(event, editor) => {
-            // console.log("Focus.", editor);
-            // editor.editing.view.change((writer) => {
-            //   writer.setStyle(
-            //     "border",
-            //     "1px solid green",
-            //     editor.editing.view.document.getRoot()
-            //   );
-            // });
-          }}
-        />
+    <div className="">
+      <div dangerouslySetInnerHTML={{ __html: content }}></div>
+      <div className="">
+        <EditorToolbar createPost={createPost} formData={formData} />
       </div>
-      <div className="col-span-2">
-        <EditorSidebar />
+
+      <InputField
+        placeholder={"Title goes here!"}
+        type={"text"}
+        setValue={setTitle}
+      />
+      {/* Drag and drop */}
+      <DragAndDrop setFiles={setFiles} />
+      <div className="bg-gray-300 text-gray-800 h-[350px] md:h-[320px] lg:h-[300px] rounded-lg overflow-hidden">
+        <ReactQuill
+          style={editorStyle}
+          modules={modules}
+          formats={formats}
+          value={content}
+          onChange={setContent}
+        />
       </div>
     </div>
   );

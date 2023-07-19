@@ -24,14 +24,14 @@ function App() {
           <Route path="/post/:id" element={<PostDetails />} />
           <Route path="*" element={<Page404 />} />
         </Route>
-        <Route path="/admin" element={<DashboardLayout />}>
-          <Route index element={<Login />} />
-          <Route path="dashboard" element={<Dashboard />} />
+        <Route path="/admin/dashboard" element={<DashboardLayout />}>
+          <Route index element={<Dashboard />} />
           <Route path="stats" element={<Stats />} />
           <Route path="create-post" element={<AddPost />} />
           <Route path="post/:id" element={<UpdatePost />} />
           <Route path="*" element={<Page404 />} />
         </Route>
+        <Route path="/admin" element={<Login />} />
         {/* if we use url as isRegister */}
         {/* <Route path="/admin/register" element={<Login />} /> */}
       </Routes>

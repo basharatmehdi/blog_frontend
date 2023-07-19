@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 
 const InputField = (props) => {
-  const { label, id, type, placeholder } = props;
+  const { label, id, type, placeholder, setValue } = props;
   const [showPassword, setShowPassword] = useState(false);
 
-  const inputStyle =
-    "bg-gray-300 appearance-none border-2 border-gray-200 rounded w-full py-2 xxs:px-2 sm:px-4 xxs:text-xs sm:text-base text-gray-700 focus:outline-none focus:border-green-500 resize-none";
+  // const inputStyle =
+  //   "bg-gray-300 appearance-none rounded w-full py-2 xxs:px-2 sm:px-4 xxs:text-xs sm:text-base text-gray-700 focus:outline-none focus:border-green-500 resize-none";
   return (
     <>
       {/* {id === "password" ? (
@@ -54,18 +54,18 @@ const InputField = (props) => {
         </div>
       )} */}
       <div className="mb-4">
-        <label
-          className="text-gray-200 text-sm font-semibold mb-2"
-          htmlFor={id}
-        >
-          {label}
-        </label>
+        {label && (
+          <label className="labelStyle" htmlFor={id}>
+            {label}
+          </label>
+        )}
         <div className="relative flex items-center">
           <input
-            className={inputStyle}
+            className="inputStyle"
             id={id}
             type={id === "password" ? (showPassword ? "text" : type) : type}
             placeholder={placeholder}
+            onChange={(e) => setValue(e.target.value)}
           />
           {id === "password" &&
             (showPassword ? (

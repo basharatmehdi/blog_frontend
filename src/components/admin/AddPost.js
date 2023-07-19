@@ -4,7 +4,7 @@ import RichEditor from "./RichEditor";
 const AddPost = () => {
   return (
     <div>
-      <RichEditor></RichEditor>
+      <RichEditor />
     </div>
   );
 };
